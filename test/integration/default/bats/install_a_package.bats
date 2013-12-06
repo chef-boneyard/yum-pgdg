@@ -1,3 +1,3 @@
 @test "install a package" {
-      yum -y install postgresql93
+      sudo yum -y install postgresql93
 }

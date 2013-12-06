@@ -3,7 +3,8 @@ yum-pdgd Cookbook
 
 The yum-pdgd cookbook takes over management of the default
 repositoryids that ship with pgdg. It allows attribute
-manipulation of base updates extras centosplus contrib.
+manipulation of `base`, `updates`, `extras`, `centosplus`, and
+`contrib`.
 
 Requirements
 ------------
