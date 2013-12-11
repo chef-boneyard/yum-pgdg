@@ -1,5 +1,3 @@
-# Encoding: utf-8
-
 default['yum']['pgdg']['version'] = '9.3'
 version = node['yum']['pgdg']['version']
 
@@ -10,7 +8,7 @@ default['yum']['pgdg']['gpgcheck'] = true
 default['yum']['pgdg']['enabled'] = true
 
 case node['platform_family']
-when 'rhel'  
+when 'rhel'
   default['yum']['pgdg']['baseurl'] = "http://yum.pgrpms.org/#{version}/redhat/rhel-$releasever-$basearch"
 when 'fedora'
   default['yum']['pgdg']['baseurl'] = "http://yum.pgrpms.org/#{version}/fedora/fedora-$releasever-$basearch"
