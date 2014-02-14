@@ -3,8 +3,7 @@ yum-pdgd Cookbook
 
 The yum-pdgd cookbook takes over management of the default
 repositoryids that ship with pgdg. It allows attribute
-manipulation of `base`, `updates`, `extras`, `centosplus`, and
-`contrib`.
+manipulation of `pgdg`.
 
 Requirements
 ------------
@@ -54,14 +53,6 @@ default_attributes(
      }
    }
  )
-```
-
-To enable the pgdg repository with a wrapper cookbook, place
-the following in a recipe:
-
-```
-node.default['yum']['centosplus']['enabled'] = true
-include_recipe 'yum-pdgd'
 ```
 
 More Examples
