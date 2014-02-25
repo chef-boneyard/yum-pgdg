@@ -1,7 +1,7 @@
-yum-pdgd Cookbook
+yum-pgdg Cookbook
 ============
 
-The yum-pdgd cookbook takes over management of the default
+The yum-pgdg cookbook takes over management of the default
 repositoryids that ship with pgdg. It allows attribute
 manipulation of `pgdg`.
 
@@ -65,7 +65,7 @@ node.default['yum']['pgdg']['mirrorlist'] = nil
 node.default['yum']['pgdg']['baseurl'] = 'https://internal.example.com/pgdg/9.3/fedora-19-x86_64'
 node.default['yum']['pgdg']['sslverify'] = false
 
-include_recipe 'yum-pdgd'
+include_recipe 'yum-pgdg'
 ```
 
 License & Authors
