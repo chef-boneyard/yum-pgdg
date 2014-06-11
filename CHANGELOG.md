@@ -2,6 +2,11 @@ yum-pgdg Cookbook CHANGELOG
 ======================
 This file is used to list changes made in each version of the yum-centos cookbook.
 
+v0.2.2 (2014-06-11)
+-------------------
+#1 - Fix typos in README
+
+
 v0.2.0 (2014-02-14)
 -------------------
 - Updating test harness
