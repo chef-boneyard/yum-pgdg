@@ -2,7 +2,7 @@
 # Author:: Sean OMeara (<someara@chef.io>)
 # Recipe:: yum-pgdg::default
 #
-# Copyright 2013-2015, Chef Software, Inc.
+# Copyright 2013, Chef
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,32 +17,32 @@
 # limitations under the License.
 
 yum_repository 'pgdg' do
-  description node['yum']['pgdg']['description']
-  baseurl node['yum']['pgdg']['baseurl']
-  mirrorlist node['yum']['pgdg']['mirrorlist']
-  gpgcheck node['yum']['pgdg']['gpgcheck']
-  gpgkey node['yum']['pgdg']['gpgkey']
-  enabled node['yum']['pgdg']['enabled']
-  cost node['yum']['pgdg']['cost']
-  exclude node['yum']['pgdg']['exclude']
-  enablegroups node['yum']['pgdg']['enablegroups']
-  failovermethod node['yum']['pgdg']['failovermethod']
-  http_caching node['yum']['pgdg']['http_caching']
-  include_config node['yum']['pgdg']['include_config']
-  includepkgs node['yum']['pgdg']['includepkgs']
-  keepalive node['yum']['pgdg']['keepalive']
-  max_retries node['yum']['pgdg']['max_retries']
-  metadata_expire node['yum']['pgdg']['metadata_expire']
-  mirror_expire node['yum']['pgdg']['mirror_expire']
-  priority node['yum']['pgdg']['priority']
-  proxy node['yum']['pgdg']['proxy']
-  proxy_username node['yum']['pgdg']['proxy_username']
-  proxy_password node['yum']['pgdg']['proxy_password']
-  repositoryid node['yum']['pgdg']['repositoryid']
-  sslcacert node['yum']['pgdg']['sslcacert']
-  sslclientcert node['yum']['pgdg']['sslclientcert']
-  sslclientkey node['yum']['pgdg']['sslclientkey']
-  sslverify node['yum']['pgdg']['sslverify']
-  timeout node['yum']['pgdg']['timeout']
+  description node['yum']['pgdg']['description'] if node['yum']['pgdg']['description']
+  baseurl node['yum']['pgdg']['baseurl'] if node['yum']['pgdg']['baseurl']
+  mirrorlist node['yum']['pgdg']['mirrorlist'] if node['yum']['pgdg']['mirrorlist']
+  gpgcheck node['yum']['pgdg']['gpgcheck'] if node['yum']['pgdg']['gpgcheck']
+  gpgkey node['yum']['pgdg']['gpgkey'] if  node['yum']['pgdg']['gpgkey']
+  enabled node['yum']['pgdg']['enabled'] if node['yum']['pgdg']['enabled']
+  cost node['yum']['pgdg']['cost'] if node['yum']['pgdg']['cost']
+  exclude node['yum']['pgdg']['exclude'] if node['yum']['pgdg']['exclude']
+  enablegroups node['yum']['pgdg']['enablegroups'] if node['yum']['pgdg']['enablegroups']
+  failovermethod node['yum']['pgdg']['failovermethod'] if node['yum']['pgdg']['failovermethod']
+  http_caching node['yum']['pgdg']['http_caching'] if  node['yum']['pgdg']['http_caching']
+  include_config node['yum']['pgdg']['include_config'] if node['yum']['pgdg']['include_config']
+  includepkgs node['yum']['pgdg']['includepkgs'] if node['yum']['pgdg']['includepkgs']
+  keepalive node['yum']['pgdg']['keepalive'] if node['yum']['pgdg']['keepalive']
+  max_retries node['yum']['pgdg']['max_retries'] if node['yum']['pgdg']['max_retries']
+  metadata_expire node['yum']['pgdg']['metadata_expire'] if node['yum']['pgdg']['metadata_expire']
+  mirror_expire node['yum']['pgdg']['mirror_expire'] if  node['yum']['pgdg']['mirror_expire']
+  priority node['yum']['pgdg']['priority'] if node['yum']['pgdg']['priority']
+  proxy node['yum']['pgdg']['proxy'] if node['yum']['pgdg']['proxy']
+  proxy_username node['yum']['pgdg']['proxy_username'] if  node['yum']['pgdg']['proxy_username']
+  proxy_password node['yum']['pgdg']['proxy_password'] if  node['yum']['pgdg']['proxy_password']
+  repositoryid node['yum']['pgdg']['repositoryid'] if node['yum']['pgdg']['repositoryid']
+  sslcacert node['yum']['pgdg']['sslcacert'] if node['yum']['pgdg']['sslcacert']
+  sslclientcert node['yum']['pgdg']['sslclientcert'] if node['yum']['pgdg']['sslclientcert']
+  sslclientkey node['yum']['pgdg']['sslclientkey'] if node['yum']['pgdg']['sslclientkey']
+  sslverify node['yum']['pgdg']['sslverify'] if node['yum']['pgdg']['sslverify']
+  timeout node['yum']['pgdg']['timeout'] if  node['yum']['pgdg']['timeout']
   action :create
 end
