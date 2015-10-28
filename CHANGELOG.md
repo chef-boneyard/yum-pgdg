@@ -2,6 +2,10 @@ yum-pgdg Cookbook CHANGELOG
 ======================
 This file is used to list changes made in each version of the yum-pgdg cookbook.
 
+v0.2.5 (2015-10-28)
+-------------------
+- Fixing Chef 13 nil property deprecation warnings
+
 v0.2.4 (2015-09-21)
 -------------------
 - Update yum dependency from ~3.0 to ~3.2
