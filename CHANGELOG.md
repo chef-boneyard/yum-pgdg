@@ -1,13 +1,10 @@
-yum-pgdg Cookbook CHANGELOG
-======================
+# yum-pgdg Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-pgdg cookbook.
 
-v0.2.5 (2015-10-28)
--------------------
+## v0.2.5 (2015-10-28)
 - Fixing Chef 13 nil property deprecation warnings
 
-v0.2.4 (2015-09-21)
--------------------
+## v0.2.4 (2015-09-21)
 - Update yum dependency from ~3.0 to ~3.2
 - Added Chef standard Rubocop file
 - Updated platforms in Kitchen CI config
@@ -20,19 +17,14 @@ v0.2.4 (2015-09-21)
 - Added Travis and cookbook version badges to the readme
 - Added source_url and issues_url to the metadata
 
-v0.2.2 (2014-06-11)
--------------------
+## v0.2.2 (2014-06-11)
 - Fix typos in README
 
-
-v0.2.0 (2014-02-14)
--------------------
+## v0.2.0 (2014-02-14)
 - Updating test harness
 
-v0.1.4
-------
+## v0.1.4
 Adding CHANGELOG.md
 
-v0.1.0
-------
+## v0.1.0
 initial release
