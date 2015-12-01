@@ -1,6 +1,9 @@
 # yum-pgdg Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-pgdg cookbook.
 
+## v0.2.6 (2015-11-30)
+- Fixed attributes with value of false being ignored
+
 ## v0.2.5 (2015-10-28)
 - Fixing Chef 13 nil property deprecation warnings
 
