@@ -21,23 +21,23 @@ yum_repository 'pgdg' do
   baseurl node['yum']['pgdg']['baseurl'] unless node['yum']['pgdg']['baseurl'].nil?
   mirrorlist node['yum']['pgdg']['mirrorlist'] unless node['yum']['pgdg']['mirrorlist'].nil?
   gpgcheck node['yum']['pgdg']['gpgcheck'] unless node['yum']['pgdg']['gpgcheck'].nil?
-  gpgkey node['yum']['pgdg']['gpgkey'] if  node['yum']['pgdg']['gpgkey'].nil?
+  gpgkey node['yum']['pgdg']['gpgkey'] unless node['yum']['pgdg']['gpgkey'].nil?
   enabled node['yum']['pgdg']['enabled'] unless node['yum']['pgdg']['enabled'].nil?
   cost node['yum']['pgdg']['cost'] unless node['yum']['pgdg']['cost'].nil?
   exclude node['yum']['pgdg']['exclude'] unless node['yum']['pgdg']['exclude'].nil?
   enablegroups node['yum']['pgdg']['enablegroups'] unless node['yum']['pgdg']['enablegroups'].nil?
   failovermethod node['yum']['pgdg']['failovermethod'] unless node['yum']['pgdg']['failovermethod'].nil?
-  http_caching node['yum']['pgdg']['http_caching'] if  node['yum']['pgdg']['http_caching'].nil?
+  http_caching node['yum']['pgdg']['http_caching'] unless node['yum']['pgdg']['http_caching'].nil?
   include_config node['yum']['pgdg']['include_config'] unless node['yum']['pgdg']['include_config'].nil?
   includepkgs node['yum']['pgdg']['includepkgs'] unless node['yum']['pgdg']['includepkgs'].nil?
   keepalive node['yum']['pgdg']['keepalive'] unless node['yum']['pgdg']['keepalive'].nil?
   max_retries node['yum']['pgdg']['max_retries'] unless node['yum']['pgdg']['max_retries'].nil?
   metadata_expire node['yum']['pgdg']['metadata_expire'] unless node['yum']['pgdg']['metadata_expire'].nil?
-  mirror_expire node['yum']['pgdg']['mirror_expire'] if  node['yum']['pgdg']['mirror_expire'].nil?
+  mirror_expire node['yum']['pgdg']['mirror_expire'] unless node['yum']['pgdg']['mirror_expire'].nil?
   priority node['yum']['pgdg']['priority'] unless node['yum']['pgdg']['priority'].nil?
   proxy node['yum']['pgdg']['proxy'] unless node['yum']['pgdg']['proxy'].nil?
-  proxy_username node['yum']['pgdg']['proxy_username'] if  node['yum']['pgdg']['proxy_username'].nil?
-  proxy_password node['yum']['pgdg']['proxy_password'] if  node['yum']['pgdg']['proxy_password'].nil?
+  proxy_username node['yum']['pgdg']['proxy_username'] unless node['yum']['pgdg']['proxy_username'].nil?
+  proxy_password node['yum']['pgdg']['proxy_password'] unless node['yum']['pgdg']['proxy_password'].nil?
   repositoryid node['yum']['pgdg']['repositoryid'] unless node['yum']['pgdg']['repositoryid'].nil?
   sslcacert node['yum']['pgdg']['sslcacert'] unless node['yum']['pgdg']['sslcacert'].nil?
   sslclientcert node['yum']['pgdg']['sslclientcert'] unless node['yum']['pgdg']['sslclientcert'].nil?
