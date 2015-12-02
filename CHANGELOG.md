@@ -1,6 +1,9 @@
 # yum-pgdg Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-pgdg cookbook.
 
+## v0.2.7 (2015-12-01)
+- Fixing if/unless logic in recipe
+
 ## v0.2.6 (2015-11-30)
 - Fixed attributes with value of false being ignored
 

@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
 description 'Installs and configures the PGDG yum repo'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.2.6'
+version '0.2.7'
 
 depends 'yum', '~> 3.2'
 
