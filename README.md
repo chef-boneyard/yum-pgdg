@@ -44,7 +44,7 @@ default['yum']['pgdg']['gpgkey'] = 'http://yum.postgresql.org/RPM-GPG-KEY-PGDG'
 ## Usage Example
 To disable the pgdg repository through a Role or Environment definition
 
-```
+```ruby
 default_attributes(
   :yum => {
     :pgdg => {
@@ -59,7 +59,7 @@ default_attributes(
 ## More Examples
 Point the base and updates repositories at an internally hosted server.
 
-```
+```ruby
 node.default['yum']['pgdg']['enabled'] = true
 node.default['yum']['pgdg']['mirrorlist'] = nil
 node.default['yum']['pgdg']['baseurl'] = 'https://internal.example.com/pgdg/9.3/fedora-19-x86_64'
