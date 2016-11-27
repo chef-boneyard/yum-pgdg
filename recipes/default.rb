@@ -1,6 +1,7 @@
 #
 # Author:: Sean OMeara (<someara@chef.io>)
-# Recipe:: yum-pgdg::default
+# Recipe:: default
+# Cookbook:: yum-pgdg
 #
 # Copyright:: 2013-2016, Chef Software, Inc.
 #
