@@ -13,11 +13,11 @@ The yum-pgdg cookbook takes over management of the default repositoryids that sh
 
 ### Chef
 
-- Chef 12.1+
+- Chef 12.14+
 
 ### Cookbooks
 
-- compat_resource
+- none
 
 ## Attributes
 
