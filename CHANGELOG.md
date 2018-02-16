@@ -1,6 +1,12 @@
 # yum-pgdg Cookbook CHANGELOG
 This file is used to list changes made in each version of the yum-pgdg cookbook.
 
+## 3.0.0 (2018-02-16)
+
+- Require Chef 12.14+ and remove compat_resource dep
+- Resolve ChefSpec warnings
+- Use a SPDX compliant license string
+
 ## 2.0.1 (2016-12-22)
 
 - Depend on the latest compat_resource cookbook
